@@ -17,7 +17,7 @@
         require_once 'db.php';
         $db=new Db();
         $con=$db->conn();
-        mysqli_select_db($con, 'bloodbank') or die("connection error");
+        mysqli_select_db($con, 'bhDbcQRgN8') or die("connection error");
         $pass="insert into addblood(a_hospname,a_hospcont,a_hospaddr,a_bldgrp,a_cap,a_date) values ('$hname','$hcont','$haddr','$bldgrp','$cap','$date')";
         $fire=mysqli_query($con,$pass);
         $k=1;

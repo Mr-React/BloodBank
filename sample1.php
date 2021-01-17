@@ -2,7 +2,7 @@
 require_once 'db.php';
 $db=new Db();
 $con=$db->conn();
-mysqli_select_db($con, 'bloodbank') or die("connection error");
+mysqli_select_db($con, 'bhDbcQRgN8') or die("connection error");
 $pass = "select * from addblood";
 $result = mysqli_query($con, $pass);
 

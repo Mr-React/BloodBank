@@ -7,7 +7,7 @@
     $user1=$_POST['user'];
     
     
-    mysqli_select_db($con,'bloodbank') or die("Database Connection error");
+    mysqli_select_db($con,'bhDbcQRgN8') or die("Database Connection error");
 
     if($user1==1)
     {

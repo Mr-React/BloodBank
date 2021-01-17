@@ -8,7 +8,7 @@
     require_once 'db.php';
     $db=new Db();
     $con=$db->conn();
-    mysqli_select_db($con,'bloodbank') or die("connection error");
+    mysqli_select_db($con,'bhDbcQRgN8') or die("connection error");
     $email="select * from hospital where hospemail='$hospemail'";
     $pass="select * from hospital where hospcont='$hospcont'";
     $email1=mysqli_query($con,$email);

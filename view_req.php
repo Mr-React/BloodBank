@@ -7,8 +7,10 @@
     }
     $temp=$_SESSION['email'];
 
-    $con = mysqli_connect('localhost', 'root', '');
-    mysqli_select_db($con, 'bloodbank') or die("connection error");
+    require_once 'db.php';
+        $db=new Db();
+        $con=$db->conn();
+    mysqli_select_db($con, 'bhDbcQRgN8') or die("connection error");
     $pass = "select hospname from hospital where hospemail='$temp'";
     $result = mysqli_query($con, $pass);
 

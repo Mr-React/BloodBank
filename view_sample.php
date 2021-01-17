@@ -4,8 +4,10 @@ if(!isset($_SESSION['email']))
 {
 	header('location:http://localhost/Blood_Bank/login.php');
 }
-$con = mysqli_connect('localhost', 'root', '');
-mysqli_select_db($con, 'bloodbank') or die("connection error");
+require_once 'db.php';
+        $db=new Db();
+        $con=$db->conn();
+mysqli_select_db($con, 'bhDbcQRgN8') or die("connection error");
 $pass = "select * from addblood";
 $result = mysqli_query($con, $pass);
 

@@ -14,7 +14,7 @@
     $db=new Db();
     $con=$db->conn();
 
-    mysqli_select_db($con,'bloodbank') or die("connection error");
+    mysqli_select_db($con,'bhDbcQRgN8') or die("connection error");
     $email="select * from receiver where rec_email='$remail'";
     $pass="select * from receiver where rec_cont='$rcont'";
     $email1=mysqli_query($con,$email);

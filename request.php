@@ -7,7 +7,7 @@ if(!isset($_SESSION['email']))
         require_once 'db.php';
         $db=new Db();
         $con=$db->conn();
-		mysqli_select_db($con,'bloodbank') or die("Database Connection Error");
+		mysqli_select_db($con,'bhDbcQRgN8') or die("Database Connection Error");
 		$id=$_GET['id'];
         $upd=mysqli_query($con,"select * from addblood where bid='$id'");
 
